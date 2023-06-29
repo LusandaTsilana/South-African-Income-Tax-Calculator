@@ -36,6 +36,7 @@ public class IncomeTax extends javax.swing.JFrame {
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
+        //jLabelR = new javax.swing.JLabel();
         btaxincome = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -53,7 +54,7 @@ public class IncomeTax extends javax.swing.JFrame {
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 22)); // NOI18N
         jLabel2.setText("How old are you?");
 
         buttonGroup2.add(jRadioButton1);
@@ -85,6 +86,9 @@ public class IncomeTax extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setText("What is your annual income before tax?");
+        //jLabelR.setFont(new java.awt.Font("Times New Roman", 0, 14));
+        //jLabelR.setText("R");
+
 
         btaxincome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,10 +100,10 @@ public class IncomeTax extends javax.swing.JFrame {
         jLabel4.setText("Results");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel5.setText("Yearly income tax          =");
+        jLabel5.setText("Yearly income tax          =     R");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel6.setText("Your net annual income  =");
+        jLabel6.setText("Your net annual income  =   R");
 
         taxamount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,7 +262,7 @@ public class IncomeTax extends javax.swing.JFrame {
     }                                             
 
     private void RecalculateActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        
+        // to reset everything to blank
         jRadioButton1.setSelected(false);
         jRadioButton2.setSelected(false);
         jRadioButton3.setSelected(false);
@@ -459,6 +463,7 @@ public class IncomeTax extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    //private javax.swing.JLabel jLabelR;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
